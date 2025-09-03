@@ -4,31 +4,31 @@
             {
                 "entries": [
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 26,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on fill.",
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"fill\".",
                         "functionName": "fill",
                         "line": 16
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 26,
-                        "durationMicroseconds": 3651,
-                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "durationMicroseconds": 110,
+                        "errorMessage": "Cannot access value for name Fn",
                         "functionName": "appsdata",
                         "line": 18
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 1,
+                        "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type StackView for binding on stackView.",
                         "functionName": "stackView",
                         "line": 19
                     }
                 ],
-                "filepath": "/home/anujs/practice/Main.qml"
+                "filePath": "/home/harsha/Public/practice/Main.qml"
             }
         ],
         "moduleId": "practice(apppractice)"

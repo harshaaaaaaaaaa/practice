@@ -21,14 +21,14 @@ extern const unsigned char qmlData alignas(16) [];
 extern const unsigned char qmlData alignas(16) [] = {
 
 0x71,0x76,0x34,0x63,0x64,0x61,0x74,0x61,
-0x42,0x0,0x0,0x0,0x2,0x8,0x6,0x0,
+0x42,0x0,0x0,0x0,0x2,0x9,0x6,0x0,
 0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,
-0xf4,0x6d,0x0,0x0,0x37,0x35,0x35,0x33,
-0x34,0x66,0x33,0x65,0x37,0x66,0x66,0x66,
-0x32,0x34,0x65,0x64,0x37,0x63,0x63,0x62,
-0x33,0x36,0x34,0x65,0x32,0x65,0x64,0x39,
-0x39,0x35,0x30,0x61,0x37,0x33,0x64,0x61,
-0x38,0x37,0x39,0x66,0x0,0x0,0x0,0x0,
+0xf4,0x6d,0x0,0x0,0x63,0x31,0x31,0x35,
+0x66,0x64,0x63,0x38,0x66,0x64,0x31,0x65,
+0x36,0x33,0x34,0x62,0x61,0x36,0x30,0x64,
+0x31,0x64,0x35,0x61,0x65,0x37,0x38,0x63,
+0x63,0x37,0x63,0x33,0x30,0x34,0x32,0x34,
+0x39,0x35,0x30,0x32,0x0,0x0,0x0,0x0,
 0x0,0x0,0x0,0x0,0xaa,0x81,0xdf,0x1c,
 0x3,0x27,0x41,0x24,0x83,0xa4,0x94,0xad,
 0x8e,0x1e,0x8c,0xa2,0x0,0x0,0x0,0x0,
@@ -3544,8 +3544,8 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_MSVC(4573)
 extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
 extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[] = {
-{ 0, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+{ 0, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = QMetaType::fromType<QVariant>();
@@ -3554,9 +3554,9 @@ extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[] = {
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for activeKeys at line 17, column 5
-QVariant r2_0;
+QVariant v2_0;
 // generate_DefineObjectLiteral
-r2_0 = QVariantMap {
+v2_0 = QVariantMap {
 };
 {
 }
@@ -3564,14 +3564,14 @@ r2_0 = QVariantMap {
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_0.isValid())
+    if (!v2_0.isValid())
         aotContext->setReturnValueUndefined();
-    *static_cast<QVariant *>(argv[0]) = std::move(r2_0);
+    *static_cast<QVariant *>(argv[0]) = std::move(v2_0);
 }
 return;
 }
- },{ 10, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 10, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = QMetaType();
@@ -3580,14 +3580,22 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // skipLeft at line 431, column 5
-double r2_6;
-double r2_3;
-int r2_4;
-double r2_0;
-double r2_5;
-double r7_0;
-double r2_1;
-bool r2_2;
+bool v2_33;
+bool v2_9;
+double v2_0;
+double v2_13;
+double v2_24;
+double v2_29;
+double v2_32;
+double v2_37;
+double v2_5;
+double v2_8;
+int c2_22;
+int c2_47;
+int v2_18;
+int v2_21;
+int v2_42;
+int v2_45;
 // generate_LoadQmlContextPropertyLookup
 {
 int retrieved;
@@ -3598,37 +3606,36 @@ while (!aotContext->loadScopeObjectPropertyLookup(214, &retrieved)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(214, QMetaType::fromType<int>());
+aotContext->initLoadScopeObjectPropertyLookup(214);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 return;
 }
 }
-r2_0 = double(std::move(retrieved));
+v2_0 = double(std::move(retrieved));
 }
 {
 }
 // generate_Decrement
 {
-auto converted = r2_0;
-r2_1 = (--converted);
+auto converted = v2_0;
+v2_5 = (--converted);
 }
 {
 }
 // generate_StoreReg
-r7_0 = r2_1;
 {
 }
 // generate_LoadZero
-r2_1 = double(0);
+v2_8 = double(0);
 {
 }
 // generate_CmpGt
-r2_2 = r7_0 > r2_1;
+v2_9 = v2_5 > v2_8;
 {
 }
 // generate_JumpFalse
-if (!r2_2) {
+if (!v2_9) {
     goto label_0;
 }
 {
@@ -3643,35 +3650,37 @@ while (!aotContext->loadScopeObjectPropertyLookup(215, &retrieved)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(18);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(215, QMetaType::fromType<int>());
+aotContext->initLoadScopeObjectPropertyLookup(215);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 return;
 }
 }
-r2_3 = double(std::move(retrieved));
+v2_13 = double(std::move(retrieved));
 }
 {
 }
 // generate_Decrement
 {
-auto converted = r2_3;
-r2_4 = QJSNumberCoercion::toInteger((--converted));
+auto converted = v2_13;
+v2_18 = QJSNumberCoercion::toInteger((--converted));
 }
 {
 }
 // generate_Jump
 {
+c2_22 = v2_18;
     goto label_1;
 }
 label_0:;
 // generate_LoadZero
-r2_4 = 0;
+v2_21 = 0;
 {
+c2_22 = std::move(v2_21);
 }
 label_1:;
 // generate_StoreNameSloppy
-aotContext->storeNameSloppy(15, &r2_4, QMetaType::fromType<int>());
+aotContext->storeNameSloppy(15, &c2_22, QMetaType::fromType<int>());
 {
 }
 // generate_LoadQmlContextPropertyLookup
@@ -3684,37 +3693,36 @@ while (!aotContext->loadScopeObjectPropertyLookup(216, &retrieved)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(29);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(216, QMetaType::fromType<int>());
+aotContext->initLoadScopeObjectPropertyLookup(216);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 return;
 }
 }
-r2_5 = double(std::move(retrieved));
+v2_24 = double(std::move(retrieved));
 }
 {
 }
 // generate_Decrement
 {
-auto converted = r2_5;
-r2_1 = (--converted);
+auto converted = v2_24;
+v2_29 = (--converted);
 }
 {
 }
 // generate_StoreReg
-r7_0 = r2_1;
 {
 }
 // generate_LoadZero
-r2_1 = double(0);
+v2_32 = double(0);
 {
 }
 // generate_CmpGt
-r2_2 = r7_0 > r2_1;
+v2_33 = v2_29 > v2_32;
 {
 }
 // generate_JumpFalse
-if (!r2_2) {
+if (!v2_33) {
     goto label_2;
 }
 {
@@ -3729,49 +3737,56 @@ while (!aotContext->loadScopeObjectPropertyLookup(217, &retrieved)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(42);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(217, QMetaType::fromType<int>());
+aotContext->initLoadScopeObjectPropertyLookup(217);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 return;
 }
 }
-r2_6 = double(std::move(retrieved));
+v2_37 = double(std::move(retrieved));
 }
 {
 }
 // generate_Decrement
 {
-auto converted = r2_6;
-r2_4 = QJSNumberCoercion::toInteger((--converted));
+auto converted = v2_37;
+v2_42 = QJSNumberCoercion::toInteger((--converted));
 }
 {
 }
 // generate_Jump
 {
+c2_47 = v2_42;
     goto label_3;
 }
 label_2:;
 // generate_LoadInt
-r2_4 = 1;
+v2_45 = 1;
 {
+c2_47 = std::move(v2_45);
 }
 label_3:;
 // generate_StoreNameSloppy
-aotContext->storeNameSloppy(25, &r2_4, QMetaType::fromType<int>());
+aotContext->storeNameSloppy(25, &c2_47, QMetaType::fromType<int>());
 {
 }
 // generate_CallQmlContextPropertyLookup
 {
-void *args[] = { nullptr };
-const QMetaType types[] = { QMetaType() };
+const auto doCall = [&]() {
+    void *args[] = {nullptr};
+    return aotContext->callQmlContextPropertyLookup(218, args, 0);
+};
+const auto doInit = [&]() {
+    aotContext->initCallQmlContextPropertyLookup(218, 5);
+};
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(62);
 #endif
-while (!aotContext->callQmlContextPropertyLookup(218, args, types, 0)) {
+while (!doCall()) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(62);
 #endif
-aotContext->initCallQmlContextPropertyLookup(218);
+doInit();
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 return;
@@ -3785,8 +3800,8 @@ return;
 // generate_Ret
 return;
 }
- },{ 17, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 17, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -3795,17 +3810,17 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for bottom at line 49, column 9
-QVariant r2_1;
-QObject *r2_0;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(242, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(242, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(242, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(242);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -3822,12 +3837,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(243));
-while (!aotContext->getObjectLookup(243, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(243));
+while (!aotContext->getObjectLookup(243, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(243, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(243, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -3837,7 +3852,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(243));
+v2_5 = QVariant(aotContext->lookupResultMetaType(243));
 }
 {
 }
@@ -3845,16 +3860,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(243));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 18, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 18, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -3863,17 +3878,17 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for right at line 50, column 9
-QVariant r2_1;
-QObject *r2_0;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(244, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(244, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(244, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(244);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -3890,12 +3905,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(245));
-while (!aotContext->getObjectLookup(245, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(245));
+while (!aotContext->getObjectLookup(245, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(245, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(245, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -3905,7 +3920,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(245));
+v2_5 = QVariant(aotContext->lookupResultMetaType(245));
 }
 {
 }
@@ -3913,16 +3928,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(245));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 19, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 19, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }();
@@ -3931,16 +3946,16 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for centerIn at line 59, column 13
-QObject *r2_0;
+QObject *v2_0;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(246, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(246, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(246, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(246);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -3955,12 +3970,12 @@ return;
 }
 // generate_Ret
 if (argv[0]) {
-    *static_cast<QObject * *>(argv[0]) = r2_0;
+    *static_cast<QObject * *>(argv[0]) = v2_0;
 }
 return;
 }
- },{ 21, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 21, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }();
@@ -3969,16 +3984,16 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for fill at line 62, column 13
-QObject *r2_0;
+QObject *v2_0;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(252, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(252, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(252, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(252);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -3993,12 +4008,12 @@ return;
 }
 // generate_Ret
 if (argv[0]) {
-    *static_cast<QObject * *>(argv[0]) = r2_0;
+    *static_cast<QObject * *>(argv[0]) = v2_0;
 }
 return;
 }
- },{ 22, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 22, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = QMetaType();
@@ -4007,24 +4022,28 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for onCompleted at line 73, column 5
-QObject *r2_0;
-QObject *r7_0;
+QObject *v2_14;
 // generate_CreateCallContext
 {
 {
 }
 // generate_CallQmlContextPropertyLookup
 {
-void *args[] = { nullptr };
-const QMetaType types[] = { QMetaType() };
+const auto doCall = [&]() {
+    void *args[] = {nullptr};
+    return aotContext->callQmlContextPropertyLookup(253, args, 0);
+};
+const auto doInit = [&]() {
+    aotContext->initCallQmlContextPropertyLookup(253, 5);
+};
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(14);
 #endif
-while (!aotContext->callQmlContextPropertyLookup(253, args, types, 0)) {
+while (!doCall()) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(14);
 #endif
-aotContext->initCallQmlContextPropertyLookup(253);
+doInit();
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 return;
@@ -4037,7 +4056,7 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(19);
 #endif
-while (!aotContext->loadContextIdLookup(254, &r2_0)) {
+while (!aotContext->loadContextIdLookup(254, &v2_14)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(19);
 #endif
@@ -4050,21 +4069,25 @@ return;
 {
 }
 // generate_StoreReg
-r7_0 = r2_0;
 {
 }
 // generate_CallPropertyLookup
 {
-void *args[] = { nullptr };
-const QMetaType types[] = { QMetaType() };
+const auto doCall = [&]() {
+    void *args[] = {nullptr};
+    return aotContext->callObjectPropertyLookup(255, v2_14, args, 0);
+};
+const auto doInit = [&]() {
+    aotContext->initCallObjectPropertyLookup(255, v2_14, 48);
+};
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(38);
 #endif
-while (!aotContext->callObjectPropertyLookup(255, r7_0, args, types, 0)) {
+while (!doCall()) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(38);
 #endif
-aotContext->initCallObjectPropertyLookup(255);
+doInit();
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 return;
@@ -4085,8 +4108,8 @@ return;
 // generate_Ret
 return;
 }
- },{ 23, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 23, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }();
@@ -4095,16 +4118,16 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for fill at line 238, column 9
-QObject *r2_0;
+QObject *v2_0;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(256, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(256, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(256, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(256);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4119,12 +4142,12 @@ return;
 }
 // generate_Ret
 if (argv[0]) {
-    *static_cast<QObject * *>(argv[0]) = r2_0;
+    *static_cast<QObject * *>(argv[0]) = v2_0;
 }
 return;
 }
- },{ 27, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 27, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -4133,17 +4156,17 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for right at line 312, column 17
-QVariant r2_1;
-QObject *r2_0;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(356, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(356, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(356, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(356);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4160,12 +4183,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(357));
-while (!aotContext->getObjectLookup(357, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(357));
+while (!aotContext->getObjectLookup(357, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(357, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(357, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4175,7 +4198,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(357));
+v2_5 = QVariant(aotContext->lookupResultMetaType(357));
 }
 {
 }
@@ -4183,16 +4206,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(357));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 28, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 28, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -4201,17 +4224,17 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for top at line 313, column 17
-QObject *r2_0;
-QVariant r2_1;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(358, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(358, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(358, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(358);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4228,12 +4251,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(359));
-while (!aotContext->getObjectLookup(359, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(359));
+while (!aotContext->getObjectLookup(359, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(359, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(359, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4243,7 +4266,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(359));
+v2_5 = QVariant(aotContext->lookupResultMetaType(359));
 }
 {
 }
@@ -4251,16 +4274,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(359));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 30, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 30, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }();
@@ -4269,16 +4292,16 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for centerIn at line 321, column 17
-QObject *r2_0;
+QObject *v2_0;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(364, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(364, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(364, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(364);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4293,12 +4316,12 @@ return;
 }
 // generate_Ret
 if (argv[0]) {
-    *static_cast<QObject * *>(argv[0]) = r2_0;
+    *static_cast<QObject * *>(argv[0]) = v2_0;
 }
 return;
 }
- },{ 31, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 31, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = QMetaType::fromType<double>();
@@ -4307,17 +4330,17 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for width at line 329, column 13
-QObject *r2_0;
-double r2_1;
+QObject *v2_0;
+double v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(365, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(365, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(365, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(365);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4332,11 +4355,11 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-while (!aotContext->getObjectLookup(366, r2_0, &r2_1)) {
+while (!aotContext->getObjectLookup(366, v2_0, &v2_5)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(366, r2_0, QMetaType::fromType<double>());
+aotContext->initGetObjectLookup(366, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4351,12 +4374,12 @@ return;
 }
 // generate_Ret
 if (argv[0]) {
-    *static_cast<double *>(argv[0]) = r2_1;
+    *static_cast<double *>(argv[0]) = v2_5;
 }
 return;
 }
- },{ 32, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 32, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = QMetaType::fromType<double>();
@@ -4365,17 +4388,17 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for height at line 330, column 13
-QObject *r2_0;
-double r2_1;
+QObject *v2_0;
+double v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(367, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(367, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(367, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(367);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4390,11 +4413,11 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-while (!aotContext->getObjectLookup(368, r2_0, &r2_1)) {
+while (!aotContext->getObjectLookup(368, v2_0, &v2_5)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(368, r2_0, QMetaType::fromType<double>());
+aotContext->initGetObjectLookup(368, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4409,12 +4432,12 @@ return;
 }
 // generate_Ret
 if (argv[0]) {
-    *static_cast<double *>(argv[0]) = r2_1;
+    *static_cast<double *>(argv[0]) = v2_5;
 }
 return;
 }
- },{ 33, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 33, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -4423,17 +4446,17 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for horizontalCenter at line 333, column 17
-QVariant r2_1;
-QObject *r2_0;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(369, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(369, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(369, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(369);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4450,12 +4473,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(370));
-while (!aotContext->getObjectLookup(370, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(370));
+while (!aotContext->getObjectLookup(370, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(370, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(370, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4465,7 +4488,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(370));
+v2_5 = QVariant(aotContext->lookupResultMetaType(370));
 }
 {
 }
@@ -4473,16 +4496,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(370));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 34, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 34, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -4491,17 +4514,17 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for top at line 334, column 17
-QVariant r2_1;
-QObject *r2_0;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(371, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(371, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(371, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(371);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4518,12 +4541,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(372));
-while (!aotContext->getObjectLookup(372, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(372));
+while (!aotContext->getObjectLookup(372, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(372, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(372, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4533,7 +4556,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(372));
+v2_5 = QVariant(aotContext->lookupResultMetaType(372));
 }
 {
 }
@@ -4541,16 +4564,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(372));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 35, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 35, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = QMetaType::fromType<double>();
@@ -4559,19 +4582,19 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for topMargin at line 335, column 17
-double r7_0;
-QObject *r2_0;
-double r2_1;
-double r2_2;
+QObject *v2_0;
+double v2_12;
+double v2_14;
+double v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(373, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(373, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(373, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(373);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4586,11 +4609,11 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-while (!aotContext->getObjectLookup(374, r2_0, &r2_1)) {
+while (!aotContext->getObjectLookup(374, v2_0, &v2_5)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(374, r2_0, QMetaType::fromType<double>());
+aotContext->initGetObjectLookup(374, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4602,27 +4625,26 @@ return;
 {
 }
 // generate_StoreReg
-r7_0 = r2_1;
 {
 }
 // generate_LoadInt
-r2_2 = double(3);
+v2_12 = double(3);
 {
 }
 // generate_Div
-r2_2 = (r7_0 / r2_2);
+v2_14 = (v2_5 / v2_12);
 {
 }
 {
 }
 // generate_Ret
 if (argv[0]) {
-    *static_cast<double *>(argv[0]) = r2_2;
+    *static_cast<double *>(argv[0]) = v2_14;
 }
 return;
 }
- },{ 38, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 38, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -4631,17 +4653,17 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for horizontalCenter at line 346, column 17
-QObject *r2_0;
-QVariant r2_1;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(382, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(382, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(382, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(382);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4658,12 +4680,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(383));
-while (!aotContext->getObjectLookup(383, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(383));
+while (!aotContext->getObjectLookup(383, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(383, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(383, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4673,7 +4695,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(383));
+v2_5 = QVariant(aotContext->lookupResultMetaType(383));
 }
 {
 }
@@ -4681,16 +4703,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(383));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 40, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 40, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -4699,17 +4721,17 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for left at line 356, column 25
-QObject *r2_0;
-QVariant r2_1;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(387, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(387, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(387, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(387);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4726,12 +4748,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(388));
-while (!aotContext->getObjectLookup(388, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(388));
+while (!aotContext->getObjectLookup(388, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(388, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(388, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4741,7 +4763,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(388));
+v2_5 = QVariant(aotContext->lookupResultMetaType(388));
 }
 {
 }
@@ -4749,16 +4771,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(388));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 41, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 41, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }();
@@ -4767,16 +4789,16 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for centerIn at line 360, column 25
-QObject *r2_0;
+QObject *v2_0;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(389, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(389, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(389, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(389);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4791,12 +4813,12 @@ return;
 }
 // generate_Ret
 if (argv[0]) {
-    *static_cast<QObject * *>(argv[0]) = r2_0;
+    *static_cast<QObject * *>(argv[0]) = v2_0;
 }
 return;
 }
- },{ 42, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 42, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -4805,13 +4827,13 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for horizontalCenter at line 370, column 21
-QVariant r2_1;
-QObject *r2_0;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadContextIdLookup(390, &r2_0)) {
+while (!aotContext->loadContextIdLookup(390, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
@@ -4832,12 +4854,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(391));
-while (!aotContext->getObjectLookup(391, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(391));
+while (!aotContext->getObjectLookup(391, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(391, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(391, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4847,7 +4869,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(391));
+v2_5 = QVariant(aotContext->lookupResultMetaType(391));
 }
 {
 }
@@ -4855,16 +4877,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(391));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 43, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 43, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -4873,13 +4895,13 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for top at line 371, column 21
-QObject *r2_0;
-QVariant r2_1;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadContextIdLookup(392, &r2_0)) {
+while (!aotContext->loadContextIdLookup(392, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
@@ -4900,12 +4922,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(393));
-while (!aotContext->getObjectLookup(393, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(393));
+while (!aotContext->getObjectLookup(393, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(393, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(393, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4915,7 +4937,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(393));
+v2_5 = QVariant(aotContext->lookupResultMetaType(393));
 }
 {
 }
@@ -4923,16 +4945,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(393));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 50, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 50, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }();
@@ -4941,16 +4963,16 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for centerIn at line 388, column 29
-QObject *r2_0;
+QObject *v2_0;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(416, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(416, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(416, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(416);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -4965,12 +4987,12 @@ return;
 }
 // generate_Ret
 if (argv[0]) {
-    *static_cast<QObject * *>(argv[0]) = r2_0;
+    *static_cast<QObject * *>(argv[0]) = v2_0;
 }
 return;
 }
- },{ 51, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 51, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -4979,17 +5001,17 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for right at line 404, column 21
-QVariant r2_1;
-QObject *r2_0;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(417, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(417, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(417, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(417);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -5006,12 +5028,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(418));
-while (!aotContext->getObjectLookup(418, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(418));
+while (!aotContext->getObjectLookup(418, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(418, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(418, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -5021,7 +5043,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(418));
+v2_5 = QVariant(aotContext->lookupResultMetaType(418));
 }
 {
 }
@@ -5029,16 +5051,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(418));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 52, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 52, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = []() { static const auto t = QMetaType::fromName("QQuickAnchorLine"); return t; }();
@@ -5047,13 +5069,13 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for top at line 405, column 21
-QVariant r2_1;
-QObject *r2_0;
+QObject *v2_0;
+QVariant v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadContextIdLookup(419, &r2_0)) {
+while (!aotContext->loadContextIdLookup(419, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
@@ -5074,12 +5096,12 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-r2_1 = QVariant(aotContext->lookupResultMetaType(420));
-while (!aotContext->getObjectLookup(420, r2_0, r2_1.data())) {
+v2_5 = QVariant(aotContext->lookupResultMetaType(420));
+while (!aotContext->getObjectLookup(420, v2_0, v2_5.data())) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(420, r2_0, r2_1.metaType());
+aotContext->initGetObjectLookup(420, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -5089,7 +5111,7 @@ if (argv[0]) {
  }
 return;
 }
-r2_1 = QVariant(aotContext->lookupResultMetaType(420));
+v2_5 = QVariant(aotContext->lookupResultMetaType(420));
 }
 {
 }
@@ -5097,16 +5119,16 @@ r2_1 = QVariant(aotContext->lookupResultMetaType(420));
 }
 // generate_Ret
 if (argv[0]) {
-    if (!r2_1.isValid())
+    if (!v2_5.isValid())
         aotContext->setReturnValueUndefined();
-    const QMetaType returnType = r2_1.metaType();
+    const QMetaType returnType = v2_5.metaType();
     returnType.destruct(argv[0]);
-    returnType.construct(argv[0], r2_1.data());
+    returnType.construct(argv[0], v2_5.data());
 }
 return;
 }
- },{ 53, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 53, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = QMetaType::fromType<double>();
@@ -5115,19 +5137,19 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for topMargin at line 406, column 21
-QObject *r2_0;
-double r7_0;
-double r2_1;
-double r2_2;
+QObject *v2_0;
+double v2_12;
+double v2_14;
+double v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(421, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(421, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(421, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(421);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -5142,11 +5164,11 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-while (!aotContext->getObjectLookup(422, r2_0, &r2_1)) {
+while (!aotContext->getObjectLookup(422, v2_0, &v2_5)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(422, r2_0, QMetaType::fromType<double>());
+aotContext->initGetObjectLookup(422, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -5158,27 +5180,26 @@ return;
 {
 }
 // generate_StoreReg
-r7_0 = r2_1;
 {
 }
 // generate_LoadInt
-r2_2 = double(10);
+v2_12 = double(10);
 {
 }
 // generate_Div
-r2_2 = (r7_0 / r2_2);
+v2_14 = (v2_5 / v2_12);
 {
 }
 {
 }
 // generate_Ret
 if (argv[0]) {
-    *static_cast<double *>(argv[0]) = r2_2;
+    *static_cast<double *>(argv[0]) = v2_14;
 }
 return;
 }
- },{ 54, 0, [](QV4::ExecutableCompilationUnit *unit, QMetaType *argTypes) {
-    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { unit };
+ },{ 54, 0, [](QV4::ExecutableCompilationUnit *contextUnit, QMetaType *argTypes) {
+    struct { QV4::ExecutableCompilationUnit *compilationUnit; } c { contextUnit };
     const auto *aotContext = &c;
     Q_UNUSED(aotContext);
     argTypes[0] = QMetaType::fromType<double>();
@@ -5187,19 +5208,19 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argv)
 // expression for rightMargin at line 407, column 21
-double r7_0;
-double r2_1;
-QObject *r2_0;
-double r2_2;
+QObject *v2_0;
+double v2_12;
+double v2_14;
+double v2_5;
 // generate_LoadQmlContextPropertyLookup
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-while (!aotContext->loadScopeObjectPropertyLookup(423, &r2_0)) {
+while (!aotContext->loadScopeObjectPropertyLookup(423, &v2_0)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(5);
 #endif
-aotContext->initLoadScopeObjectPropertyLookup(423, []() { static const auto t = QMetaType::fromName("QQuickItem*"); return t; }());
+aotContext->initLoadScopeObjectPropertyLookup(423);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -5214,11 +5235,11 @@ return;
 #ifndef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-while (!aotContext->getObjectLookup(424, r2_0, &r2_1)) {
+while (!aotContext->getObjectLookup(424, v2_0, &v2_5)) {
 #ifdef QT_NO_DEBUG
 aotContext->setInstructionPointer(10);
 #endif
-aotContext->initGetObjectLookup(424, r2_0, QMetaType::fromType<double>());
+aotContext->initGetObjectLookup(424, v2_0);
 if (aotContext->engine->hasError()) {
 aotContext->setReturnValueUndefined();
 if (argv[0]) {
@@ -5230,22 +5251,21 @@ return;
 {
 }
 // generate_StoreReg
-r7_0 = r2_1;
 {
 }
 // generate_LoadInt
-r2_2 = double(3);
+v2_12 = double(3);
 {
 }
 // generate_Div
-r2_2 = (r7_0 / r2_2);
+v2_14 = (v2_5 / v2_12);
 {
 }
 {
 }
 // generate_Ret
 if (argv[0]) {
-    *static_cast<double *>(argv[0]) = r2_2;
+    *static_cast<double *>(argv[0]) = v2_14;
 }
 return;
 }

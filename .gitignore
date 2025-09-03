@@ -1,0 +1,71 @@
+# Build directories
+build/
+**/build/
+
+# CMake build files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+*.cmake
+Makefile
+install_manifest.txt
+
+# Qt generated files
+*.qmlc
+*.jsc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+*.moc
+ui_*.h
+*.qm
+
+# Qt Creator files
+*.pro.user
+*.pri.user
+*.qbs.user
+*.qtcreator.user
+*.pro.user.*
+CMakeLists.txt.user*
+qtcsettings.cmake
+
+# Ninja build files
+build.ninja
+rules.ninja
+
+# Autogen directories
+*_autogen/
+
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Meta types and QML cache
+meta_types/
+qmltypes/
+*.qmltypes

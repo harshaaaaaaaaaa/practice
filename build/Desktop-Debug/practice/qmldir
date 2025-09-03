@@ -8,4 +8,5 @@ AppsView 1.0 utils/AppsView.qml
 Testground 1.0 utils/Testground.qml
 Result 1.0 utils/Result.qml
 KeyAnalysis 1.0 utils/KeyAnalysis.qml
+depends QtQuick
 

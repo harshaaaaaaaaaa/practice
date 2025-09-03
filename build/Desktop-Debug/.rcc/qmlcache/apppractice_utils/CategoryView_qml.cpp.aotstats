@@ -4,439 +4,439 @@
             {
                 "entries": [
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 20,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
                         "line": 17
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 22,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on top.",
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"top\".",
                         "functionName": "top",
                         "line": 14
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on left.",
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"left\".",
                         "functionName": "left",
                         "line": 15
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 16,
-                        "durationMicroseconds": 373,
+                        "durationMicroseconds": 126,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 23
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 18,
-                        "durationMicroseconds": 66,
+                        "durationMicroseconds": 23,
                         "errorMessage": "Cannot retrieve a non-object type by ID: backButton",
                         "functionName": "top",
                         "line": 25
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 21,
-                        "durationMicroseconds": 233,
+                        "durationMicroseconds": 67,
                         "errorMessage": "",
                         "functionName": "bottom",
                         "line": 26
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 240,
+                        "durationMicroseconds": 50,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 27
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 24,
-                        "durationMicroseconds": 43,
+                        "durationMicroseconds": 18,
                         "errorMessage": "Cannot retrieve a non-object type by ID: backButton",
                         "functionName": "topMargin",
                         "line": 28
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 28,
+                        "durationMicroseconds": 12,
                         "errorMessage": "Cannot retrieve a non-object type by ID: backButton",
                         "functionName": "bottomMargin",
                         "line": 29
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 20,
-                        "durationMicroseconds": 184,
+                        "durationMicroseconds": 45,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 34
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 21,
-                        "durationMicroseconds": 261,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 35
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 25,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 27,
                         "errorMessage": "Cannot access value for name appsdata",
                         "functionName": "source",
                         "line": 41
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 24,
-                        "durationMicroseconds": 283,
+                        "durationMicroseconds": 69,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 42
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 27,
-                        "durationMicroseconds": 156,
+                        "durationMicroseconds": 45,
                         "errorMessage": "",
                         "functionName": "fillMode",
                         "line": 43
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 26,
-                        "durationMicroseconds": 227,
+                        "durationMicroseconds": 54,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 45
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 37,
-                        "durationMicroseconds": 238,
+                        "durationMicroseconds": 48,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 46
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 65,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot access value for name appsdata",
                         "functionName": "text",
                         "line": 51
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 35,
-                        "durationMicroseconds": 360,
+                        "durationMicroseconds": 79,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 53
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 26,
-                        "durationMicroseconds": 892,
+                        "durationMicroseconds": 58,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 55
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 33,
-                        "durationMicroseconds": 546,
+                        "durationMicroseconds": 71,
                         "errorMessage": "",
                         "functionName": "leftMargin",
                         "line": 56
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 37,
-                        "durationMicroseconds": 265,
+                        "durationMicroseconds": 50,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 57
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 20,
-                        "durationMicroseconds": 184,
+                        "durationMicroseconds": 43,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 64
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 21,
-                        "durationMicroseconds": 288,
+                        "durationMicroseconds": 64,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 65
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 22,
-                        "durationMicroseconds": 246,
+                        "durationMicroseconds": 52,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 69
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 24,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on height.",
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"height\".",
                         "functionName": "height",
                         "line": 75
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on width.",
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"width\".",
                         "functionName": "width",
                         "line": 76
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
                         "functionName": "onClicked",
                         "line": 82
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 35,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on pixelSize.",
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"pixelSize\".",
                         "functionName": "pixelSize",
                         "line": 74
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on right.",
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"right\".",
                         "functionName": "right",
                         "line": 78
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 41,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on verticalCenter.",
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"verticalCenter\".",
                         "functionName": "verticalCenter",
                         "line": 79
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 37,
-                        "durationMicroseconds": 365,
+                        "durationMicroseconds": 87,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 92
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 33,
-                        "durationMicroseconds": 260,
+                        "durationMicroseconds": 56,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 94
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 35,
-                        "durationMicroseconds": 260,
+                        "durationMicroseconds": 49,
                         "errorMessage": "",
                         "functionName": "bottom",
                         "line": 95
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 313,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "leftMargin",
                         "line": 96
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 40,
-                        "durationMicroseconds": 293,
+                        "durationMicroseconds": 63,
                         "errorMessage": "",
                         "functionName": "bottomMargin",
                         "line": 97
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 22,
-                        "durationMicroseconds": 249,
+                        "durationMicroseconds": 54,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 105
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 25,
-                        "durationMicroseconds": 241,
+                        "durationMicroseconds": 46,
                         "errorMessage": "",
                         "functionName": "bottom",
                         "line": 106
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 241,
+                        "durationMicroseconds": 45,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 107
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 24,
-                        "durationMicroseconds": 232,
+                        "durationMicroseconds": 45,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 108
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 20,
-                        "durationMicroseconds": 79,
+                        "durationMicroseconds": 23,
                         "errorMessage": "Cannot access value for name appsdata",
                         "functionName": "model",
                         "line": 112
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 27,
-                        "durationMicroseconds": 251,
+                        "durationMicroseconds": 34,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 115
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 24,
-                        "durationMicroseconds": 185,
+                        "durationMicroseconds": 40,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 118
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 512,
+                        "durationMicroseconds": 242,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 124
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 323,
+                        "durationMicroseconds": 86,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 126
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 45,
-                        "durationMicroseconds": 335,
+                        "durationMicroseconds": 51,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 127
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 35,
-                        "durationMicroseconds": 241,
+                        "durationMicroseconds": 46,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 128
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 240,
                         "errorMessage": "Cannot access value for name donecount",
                         "functionName": "text",
                         "line": 133
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 304,
+                        "durationMicroseconds": 73,
                         "errorMessage": "",
                         "functionName": "pixelSize",
                         "line": 135
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 45,
-                        "durationMicroseconds": 240,
+                        "durationMicroseconds": 51,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 136
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 36,
-                        "durationMicroseconds": 253,
+                        "durationMicroseconds": 46,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 137
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 42,
-                        "durationMicroseconds": 289,
+                        "durationMicroseconds": 64,
                         "errorMessage": "",
                         "functionName": "rightMargin",
                         "line": 138
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 234,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "onClicked",
                         "line": 143
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessful": true,
                         "column": 35,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 35,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 142
                     },
                     {
-                        "codegenSuccessfull": false,
+                        "codegenSuccessful": false,
                         "column": 25,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on policy.",
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"policy\".",
                         "functionName": "policy",
                         "line": 154
                     }
                 ],
-                "filepath": "/home/anujs/practice/utils/CategoryView.qml"
+                "filePath": "/home/harsha/Public/practice/utils/CategoryView.qml"
             }
         ],
         "moduleId": "practice(apppractice)"
